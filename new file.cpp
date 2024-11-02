@@ -1,10 +1,11 @@
 
 #include <iostream>
 #include <vector>
+#include"something.h"
 
-int main ()
+int dunc ()
 {
-    std::cout<<"hello world!\n";
+    std::cout<<"----------Function dunc()from new file.cpp begins----------\n";
  std::vector <std::string> players;
  std::string string;
 int batcount{0};
@@ -12,7 +13,7 @@ while(batcount<5){
 if (batcount==0)
 {  
     std::cout<<"opening batsman name ";
-    std::cin>> string;
+   getline( std::cin, string);
     players.push_back (string);
     
     std::cout<<"next batsman name ";
@@ -26,7 +27,9 @@ if (batcount==0)
     batcount++;
 }}
 std::cout<<players[players.size()-1] << std::endl;
-std::cout<<players.size();
+std::cout<<players[0] <<"  is the opening batsmen" << std::endl;
+std::cout<<players.size()<<" elements in vector"<<'\n';
+std::cout<<"--------------------------END OF dunc----------------------\n\n\n";
 
     return 0;
 }
