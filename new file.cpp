@@ -17,12 +17,12 @@ if (batcount==0)
     players.push_back (string);
     
     std::cout<<"next batsman name ";
-    std::cin>> string;
+    getline (std::cin, string);
     players.push_back (string);
     batcount=2;
 }else{
     std::cout<<"New batsman name ";
-    std::cin>> string;
+   getline( std::cin, string);
     players.push_back (string);
     batcount++;
 }}
